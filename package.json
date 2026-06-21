@@ -1,0 +1,25 @@
+{
+	"name": "rhythia-clan-widget",
+	"version": "0.1.0",
+	"devDependencies": {
+		"@biomejs/biome": "^2.4.15",
+		"@cloudflare/workers-types": "^4.20260617.1",
+		"@types/node": "^25.9.3",
+		"husky": "^9.1.7",
+		"typescript": "^5",
+		"wrangler": "^4.101.0"
+	},
+	"private": true,
+	"scripts": {
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"lint": "biome check .",
+		"lint:fix": "biome check --write .",
+		"format": "biome format --write .",
+		"prepare": "husky",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"axios": "^1.18.0"
+	}
+}
