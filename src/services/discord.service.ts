@@ -17,8 +17,8 @@ export async function syncUserDiscordWidget(
     { type: 1, name: "clan_member_count", value: stats.clan_member_count },
     { type: 2, name: "clan_rp", value: stats.clan_rp },
     { type: 1, name: "user_clan_rank", value: stats.user_clan_rank },
-    { type: 1, name: "clan_owner", value: stats.clan_owner },
-    { type: 1, name: "clan_top_member", value: stats.clan_top_member },
+    { type: 1, name: "clan_owner", value: `@${stats.clan_owner}` },
+    { type: 1, name: "clan_top_member", value: `@${stats.clan_top_member}` },
   ];
 
   const payload: DiscordWidgetPayload = {
